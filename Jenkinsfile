@@ -11,13 +11,13 @@ pipeline {
 
         stage('Install Python Tools') {
             steps {
-                sh 'pip install pytest'
+                bat 'pip install pytest'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'pytest'
+                bat 'pytest'
             }
         }
     }
