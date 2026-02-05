@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Install Python Tools') {
+        stage('Install Pytest') {
             steps {
                 bat 'python -m pip install pytest'
             }
@@ -10,7 +10,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'pytest'
+                bat 'python -m pytest'
             }
         }
     }
