@@ -10,4 +10,4 @@ def test_mul():
 def test_div():
     assert div(6,2) == 3
 def test_mod():
-    assert mod(3%4) == 3
+    assert mod(3,4) == 3
